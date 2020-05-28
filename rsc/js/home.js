@@ -17,7 +17,7 @@ $(document).ready(function () {
       items: 1,
       autoHeight: true,
       loop: true,
-      autoplay: false,
+      autoplay: true,
       autoplayTimeout: 4000,
       dots: true,
       lazyLoad: false
@@ -75,11 +75,28 @@ $(document).ready(function(){
             
         }
       },
-      autoHeight:false,
+      autoHeight:true,
       loop:true,
       autoplay:true,
       autoplayTimeout:3000,
       dots:true,
+      lazyLoad:false,
+      slideBy:1,
+  });
+});
+
+$(document).ready(function(){
+  $("#key-items").owlCarousel({
+      margin:10,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      items:8,
+      autoHeight:true,
+      autoWidth:true,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:5000,
+      dots:false,
       lazyLoad:false,
       slideBy:1,
   });
