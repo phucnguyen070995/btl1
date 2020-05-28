@@ -10,19 +10,19 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   $(".owl-carousel").owlCarousel({
-//       animateOut: 'fadeOut',
-//       animateIn: 'fadeIn',
-//       items: 1,
-//       autoHeight: true,
-//       loop: true,
-//       autoplay: true,
-//       autoplayTimeout: 6000,
-//       dots: true,
-//       lazyLoad: false
-//   });
-// });
+$(document).ready(function () {
+  $(".same-carousel-items").owlCarousel({
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      items: 1,
+      autoHeight: true,
+      loop: true,
+      autoplay: false,
+      autoplayTimeout: 4000,
+      dots: true,
+      lazyLoad: false
+  });
+});
 
 // $(document).ready(function () {
 //   $(".owl-carousel1").owlCarousel({
@@ -40,11 +40,42 @@ $(document).ready(function () {
 // });
 
 $(document).ready(function(){
-  $("#dragon-items").owlCarousel({
+  $("#last-contents-items").owlCarousel({
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       items:4,
-      autoHeight:true,
+      autoHeight:false,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:5000,
+      dots:false,
+      lazyLoad:false,
+      slideBy:1,
+  });
+});
+
+$(document).ready(function(){
+  $('#brand-items').owlCarousel({
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      responsive : {
+        // breakpoint from 0 up
+        0 : {
+          items:3,
+            
+        },
+        // breakpoint from 480 up
+        480 : {
+          items:4,
+            
+        },
+        // breakpoint from 768 up
+        768 : {
+          items:6,
+            
+        }
+      },
+      autoHeight:false,
       loop:true,
       autoplay:true,
       autoplayTimeout:3000,
@@ -53,4 +84,3 @@ $(document).ready(function(){
       slideBy:1,
   });
 });
-
