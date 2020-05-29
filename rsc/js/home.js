@@ -43,7 +43,18 @@ $(document).ready(function(){
   $("#last-contents-items").owlCarousel({
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
-      items:4,
+      responsive : {
+        // breakpoint from 0 up
+        0 : {
+          items:2,
+            
+        },      
+        // breakpoint from 768 up
+        768 : {
+          items:4,
+            
+        }
+      },
       autoHeight:false,
       loop:true,
       autoplay:true,
@@ -95,7 +106,7 @@ $(document).ready(function(){
       autoWidth:true,
       loop:true,
       autoplay:true,
-      autoplayTimeout:5000,
+      autoplayTimeout:4000,
       dots:false,
       lazyLoad:false,
       slideBy:1,
