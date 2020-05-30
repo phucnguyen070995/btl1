@@ -43,6 +43,14 @@
     margin-right: 0rem;
 }
 
+.fix-padding-product{
+    padding: 0px;
+}
+
+.border-product{
+    border: 0.3px solid black;
+}
+
 .fix_container{
     max-width: 900px;
 }
@@ -150,3 +158,4 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+

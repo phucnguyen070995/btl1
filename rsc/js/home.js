@@ -10,6 +10,9 @@ $(document).ready(function () {
   });
 });
 
+
+ 
+
 $(document).ready(function () {
   $(".same-carousel-items").owlCarousel({
       animateOut: 'fadeOut',
@@ -47,12 +50,10 @@ $(document).ready(function(){
         // breakpoint from 0 up
         0 : {
           items:2,
-            
         },      
         // breakpoint from 768 up
         768 : {
-          items:4,
-            
+          items:4,     
         }
       },
       autoHeight:false,
@@ -90,7 +91,7 @@ $(document).ready(function(){
       loop:true,
       autoplay:true,
       autoplayTimeout:3000,
-      dots:true,
+      dots:false,
       lazyLoad:false,
       slideBy:1,
   });
@@ -107,6 +108,37 @@ $(document).ready(function(){
       loop:true,
       autoplay:true,
       autoplayTimeout:4000,
+      dots:false,
+      lazyLoad:false,
+      slideBy:1,
+  });
+});
+
+$(document).ready(function(){
+  $(".product-items").owlCarousel({
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      responsive : {
+        // breakpoint from 0 up
+        0 : {
+          items:1,
+            
+        },
+        // breakpoint from 480 up
+        480 : {
+          items:2,
+            
+        },
+        // breakpoint from 768 up
+        768 : {
+          items:4,
+            
+        }
+      },
+      autoHeight:false,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:5000,
       dots:false,
       lazyLoad:false,
       slideBy:1,
