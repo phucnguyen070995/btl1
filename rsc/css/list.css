@@ -14,6 +14,18 @@
     }
 }
 
+@media only screen and (max-width : 319px) {
+    .visualize1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .visualize2{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .card-products .card .title{
         font-size: 90%;
@@ -96,8 +108,16 @@
     border: 0.3px solid black;
 }
 
+.border-product1{
+    border: 0.3px solid rgb(219, 214, 214);
+}
+
 .border-product-combo{
     border: 0.5px solid rgb(218, 213, 213);
+}
+
+.border-bar{
+    border: 1.4px solid rgb(238, 237, 237);
 }
 
 
@@ -217,6 +237,10 @@
     margin-bottom: auto;
 }
 
+.column {
+    position: relative;
+  }
+  
   /* Hide the images by default */
   .mySlides {
     display: none;
@@ -230,3 +254,42 @@
   #demo .active{
     border: 0.3px solid black;
   }
+
+  .content table{
+      width: auto;
+      font-size: 14px;
+  }
+
+.content table td, .content table th{
+    vertical-align: middle;
+    padding: 1.5em 1.5em;
+}
+
+.border-bar div a{
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: 700; 
+    color: black;
+}
+
+.border-sub-bar div a{
+    text-decoration: none; 
+    font-size: 14px; 
+    font-weight: normal;
+    color: black;
+}
+
+label a{
+    font-size: 14px!important;
+    font-weight: normal!important;
+}
+
+.border-bar div a:hover,
+.border-sub-bar div a:hover,
+.border-bar a:active{
+    border-bottom: 2px solid black;
+}
+
+.pagination li{
+    list-style-type: none;
+}
