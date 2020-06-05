@@ -230,3 +230,38 @@
   #demo .active{
     border: 0.3px solid black;
   }
+
+
+  /* ----------------------------------------------------
+  page inspire */
+.menu-img{
+    transition: all 0.4s;
+}
+
+.menu-img:hover{
+    box-shadow: 5px 5px 20px rgb(200, 200, 200) !important;
+}
+
+.background-img-menu{
+    width: 100%;
+    height: 300px;
+    background: url(/rsc/img/home/background-article.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.article-banner-top {
+    position: relative;
+}
+
+.hover-product1{
+    transition: all 0.3s;
+}
+
+.hover-product1:hover{
+    box-shadow: 10px 10px 20px rgb(61, 60, 60) !important;
+}
+
+.column hr{
+    background: black;
+}

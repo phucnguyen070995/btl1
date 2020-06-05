@@ -67,6 +67,48 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $(".first-capture").owlCarousel({
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      responsive : {
+        // breakpoint from 0 up
+        0 : {
+          items:1,
+        },      
+        468 : {
+          items:2,
+        },      
+        // breakpoint from 768 up
+        1024 : {
+          items:3,     
+        }
+      },
+      autoHeight:false,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:5000,
+      dots:false,
+      lazyLoad:false,
+      slideBy:1,
+  });
+});
+
+$(document).ready(function(){
+  $(".second-capture").owlCarousel({
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      items: 1,
+      autoHeight:false,
+      loop:true,
+      autoplay:false,
+      autoplayTimeout:5000,
+      dots:true,
+      lazyLoad:false,
+      slideBy:1,
+  });
+});
+
+$(document).ready(function(){
   $('#brand-items').owlCarousel({
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
@@ -169,3 +211,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
